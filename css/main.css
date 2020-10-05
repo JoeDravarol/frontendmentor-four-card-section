@@ -11,10 +11,78 @@
 body {
   font-size: 15px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #4c4e61;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product-blurb {
+  margin: 3em auto;
+  text-align: center;
+  max-width: 400px;
+}
+
+.product-blurb__heading {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+.product-blurb__heading--unbold {
+  font-weight: 200;
+  display: block;
+}
+
+.product-blurb__content {
+  color: #a3a5ae;
+}
+
+.tools-features {
+  max-width: 400px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+.feature {
+  border-radius: 5px;
+  padding: 2em;
+  -webkit-box-shadow: -58px 68px 75px -35px rgba(0, 0, 0, 0.1);
+          box-shadow: -58px 68px 75px -35px rgba(0, 0, 0, 0.1);
+}
+
+.feature--cyan {
+  border-top: 5px solid #45d3d3;
+}
+
+.feature--red {
+  border-top: 5px solid #ea5353;
+}
+
+.feature--orange {
+  border-top: 5px solid #fcaf4a;
+}
+
+.feature--blue {
+  border-top: 5px solid #549ef2;
+}
+
+.feature__content {
+  color: #a3a5ae;
+  margin: .5em 0;
+}
+
+.feature__image {
+  display: block;
+  margin-top: 2em;
+  margin-left: auto;
 }
 
 .attribution {
-  margin-top: 10em;
+  margin-top: 5em;
   font-size: 11px;
   text-align: center;
 }

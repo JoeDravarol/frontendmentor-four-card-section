@@ -4,6 +4,9 @@ $red: hsl(0, 78%, 62%);
 $cyan: hsl(180, 62%, 55%);
 $orange: hsl(34, 97%, 64%);
 $blue: hsl(212, 86%, 64%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
 
 *,
 *::before,
@@ -16,10 +19,76 @@ $blue: hsl(212, 86%, 64%);
 body {
   font-size: 15px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: $very-dark-blue;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product-blurb {
+  margin: 3em auto;
+  text-align: center;
+  max-width: 400px;
+
+  &__heading {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+
+    &--unbold {
+      font-weight: 200;
+      display: block;
+    }
+  }
+
+  &__content {
+    color: $grayish-blue;
+  }
+}
+
+.tools-features {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+.feature {
+  border-radius: 5px;
+  padding: 2em;
+  box-shadow: -58px 68px 75px -35px rgba(0,0,0,0.1);
+
+  &--cyan {
+    border-top: 5px solid $cyan;
+  }
+
+  &--red {
+    border-top: 5px solid $red;
+  }
+
+  &--orange {
+    border-top: 5px solid $orange;
+  }
+
+  &--blue {
+    border-top: 5px solid $blue;
+  }
+
+  &__content {
+    color: $grayish-blue;
+    margin: .5em 0;
+  }
+
+  &__image {
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+  }
 }
 
 .attribution {
-  margin-top: 10em;
+  margin-top: 5em;
   font-size: 11px;
   text-align: center;
 
